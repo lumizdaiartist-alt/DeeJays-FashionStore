@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Buy New Balance 1000 | Dee Jay's</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --black: #111111;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: var(--white); color: var(--black); line-height: 1.6; }
+
+        /* --- NAVIGATION --- */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; background: var(--white); border-bottom: 1px solid #eee;
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .back-btn { text-decoration: none; color: var(--black); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+        .logo-small { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.2rem; }
+
+        /* --- PRODUCT SECTION --- */
+        .product-container { padding: 20px 5% 100px; }
+        
+        .image-gallery { width: 100%; margin-bottom: 30px; }
+        .image-gallery img { 
+            width: 100%; border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            object-fit: cover; height: 500px;
+        }
+
+        .content { padding: 10px 0; }
+        .brand-name { color: var(--gold); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; }
+        .product-title { font-family: 'Playfair Display', serif; font-size: 2rem; line-height: 1.2; margin: 10px 0; }
+        .price-tag { font-size: 1.8rem; font-weight: 700; color: var(--black); margin-bottom: 25px; display: block; }
+
+        .description-box { margin-bottom: 30px; border-top: 1px solid #eee; padding-top: 20px; }
+        .description-box h4 { margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+        .description-box p { color: #555; font-size: 0.95rem; margin-bottom: 15px; }
+
+        /* --- ACTION AREA --- */
+        .action-area {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: white; padding: 20px 5%;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+            display: flex; gap: 10px;
+        }
+
+        .order-wa {
+            flex: 1; background: #25D366; color: white; text-align: center;
+            padding: 18px; border-radius: 10px; text-decoration: none;
+            font-weight: 700; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .product-container { display: flex; gap: 50px; padding-top: 60px; }
+            .image-gallery { flex: 1; }
+            .content { flex: 1; }
+            .action-area { position: relative; padding: 0; box-shadow: none; margin-top: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="collection.html" class="back-btn">← BACK TO COLLECTION</a>
+        <div class="logo-small">DEE JAY'S</div>
+    </nav>
+
+    <div class="product-container">
+        <div class="image-gallery">
+            <img src="pic6.jpg" alt="New Balance 1000">
+        </div>
+
+        <div class="content">
+            <span class="brand-name">Performance Lifestyle</span>
+            <h1 class="product-title">New Balance 1000 'Triple White' – Retro Tech Runners</h1>
+            <span class="price-tag">₦35,000</span>
+
+            <div class="description-box">
+                <h4>Description</h4>
+                <p>The New Balance 1000 returns from the archives, bringing back the bold, futuristic tech-aesthetic of the late 90s. This 'Triple White' edition is the ultimate clean sneaker for your rotation.</p>
+                <p><strong>Features:</strong> ABZORB cushioning in the heel and forefoot for elite comfort.</p>
+                <p><strong>Style Tip:</strong> Wear these with white socks and our baggy cargos for the full "Y2K" street vibe.</p>
+            </div>
+
+            <div class="action-area">
+                <a href="https://api.whatsapp.com/send?phone=2349166819937&text=Hello%20Dee%20Jay's,%20I'm%20ready%20to%20order%20the%20New%20Balance%201000%20Triple%20White%20(₦35,000)" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="order-wa">
+                    PLACE ORDER VIA WHATSAPP
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

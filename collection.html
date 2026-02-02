@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Collections | Dee Jay's Fashion</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#111111">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #D4AF37; --black: #111111; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+        body { font-family: 'Poppins', sans-serif; background: #fff; color: var(--black); }
+
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #fff; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-links a { color: #000; font-weight: 600; margin-left: 20px; font-size: 0.8rem; text-transform: uppercase; }
+
+        .container { padding: 40px 5%; margin-top: 20px; }
+        .page-title { font-family: 'Playfair Display', serif; text-align: center; font-size: 2.2rem; margin-bottom: 10px; }
+        .sub-title { text-align: center; color: var(--gold); letter-spacing: 2px; margin-bottom: 40px; font-size: 0.8rem; text-transform: uppercase; }
+
+        .grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        
+        .card { border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: 1px solid #eee; display: block; transition: 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+
+        .img-box { width: 100%; height: 400px; background: #222; overflow: hidden; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .card-info { padding: 20px; }
+        .category { color: var(--gold); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+        .card-info h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin: 5px 0; color: var(--black); min-height: 50px; }
+        .price { font-weight: 700; font-size: 1.3rem; color: var(--black); display: block; margin-bottom: 15px; }
+        
+        .view-btn { background: var(--black); color: white; text-align: center; padding: 12px; border-radius: 5px; font-weight: 600; display: block; font-size: 0.9rem; }
+
+        .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; }
+
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" style="font-family: 'Playfair Display'; font-weight: 900; letter-spacing: 1px; color: black;">DEE JAY'S</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html" style="color: var(--gold);">Collections</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Dee Jays Collections</h1>
+        <p class="sub-title">Select an item to view details</p>
+
+        <div class="grid">
+            <a href="product1.html" class="card">
+                <div class="img-box"><img src="pic1.jpg" alt="Gallery Dept"></div>
+                <div class="card-info">
+                    <span class="category">Streetwear</span>
+                    <h3>Gallery Dept. Workshop Distressed Denim Shorts</h3>
+                    <span class="price">₦22,000</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+
+            <a href="product2.html" class="card">
+                <div class="img-box"><img src="pic2.jpg" alt="Jordan 1"></div>
+                <div class="card-info">
+                    <span class="category">Footwear</span>
+                    <h3>Air Jordan 1 Mid 'Panda' Black/White</h3>
+                    <span class="price">₦30,000</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+
+            <a href="product3.html" class="card">
+                <div class="img-box"><img src="pic3.jpg" alt="Young Stars Tee"></div>
+                <div class="card-info">
+                    <span class="category">Streetwear</span>
+                    <h3>Young Stars 'Nothing is Impossible' Graphic Tee</h3>
+                    <span class="price">₦15,500</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+
+            <a href="product4.html" class="card">
+                <div class="img-box"><img src="pic4.jpg" alt="Electric Fungi"></div>
+                <div class="card-info">
+                    <span class="category">Vintage</span>
+                    <h3>Electric Fungi Button-Down Vintage Shirt</h3>
+                    <span class="price">₦20,000</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+
+            <a href="product5.html" class="card">
+                <div class="img-box"><img src="pic5.jpg" alt="Medusa Loafers"></div>
+                <div class="card-info">
+                    <span class="category">Luxury Native</span>
+                    <h3>Medusa Crystal-Embellished Platform Loafers</h3>
+                    <span class="price">₦45,000</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+
+            <a href="product6.html" class="card">
+                <div class="img-box"><img src="pic6.jpg" alt="NB 1000"></div>
+                <div class="card-info">
+                    <span class="category">Footwear</span>
+                    <h3>New Balance 1000 'Triple White' Runners</h3>
+                    <span class="price">₦35,000</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+
+            <a href="product7.html" class="card">
+                <div class="img-box"><img src="pic7.jpg" alt="Madinio Luxe"></div>
+                <div class="card-info">
+                    <span class="category">Luxe Wear</span>
+                    <h3>Madinio Luxe 'Geometric' Two-Piece Set – Burgundy</h3>
+                    <span class="price">₦15,000</span>
+                    <span class="view-btn">View Details & Order</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <a href="https://wa.me/2348131399365" class="wa-float">General Inquiry</a>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js');
+        });
+      }
+    </script>
+</body>
+</html>
